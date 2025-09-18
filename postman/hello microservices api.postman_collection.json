@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "c712da7f-ca05-46a3-ac39-3a5694bd3beb",
+		"name": "hello microservices api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48573604"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/consume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"consume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/consume",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/consume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"consume"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
